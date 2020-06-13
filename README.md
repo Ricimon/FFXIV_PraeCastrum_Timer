@@ -1,2 +1,2 @@
 # FFXIV_PraeCastrum_Timer
-An Advanced Combat Tracker (ACT) Plugin to show how much time are left in FFXIV Castrum/Praetorium cutscenes
+An Advanced Combat Tracker (ACT) Plugin to show how much time is left in FFXIV Castrum/Praetorium cutscenes
