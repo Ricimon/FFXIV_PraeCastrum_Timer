@@ -1,59 +1,76 @@
-﻿using Advanced_Combat_Tracker;
-using FileHelpers;
+﻿using FileHelpers;
 using Ricimon.FFXIV_PraeCastrum_Timer.Models;
 using Ricimon.FFXIV_PraeCastrum_Timer.Util;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 
 namespace Ricimon.FFXIV_PraeCastrum_Timer
 {
     public class RunDataLoader
     {
-        public IEnumerable<CutsceneInfo> PraetoriumCutscenes { get; private set; }
+        public Dictionary<string, RunData> RunData { get; } = new Dictionary<string, RunData>();
 
-        private readonly string RunDataPath = Path.Combine(ActGlobals.oFormActMain.AppDataFolder.FullName, $"Plugins\\{Assembly.GetCallingAssembly().GetName().Name}\\");
-        private readonly string PraetoriumDataPath;
+        private readonly string CastrumDataResourceName;
+        private readonly string PraetoriumDataResourceName;
 
         private readonly FileHelperEngine<RunCheckpoint> _engine = new FileHelperEngine<RunCheckpoint>();
 
         public RunDataLoader()
         {
-            PraetoriumDataPath = Path.Combine(RunDataPath, "PraetoriumData.csv");
+            // https://stackoverflow.com/a/3314213
+            var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
+            //CastrumDataResourceName = resourceNames.Single(str => str.EndsWith("CastrumData.csv"));
+            PraetoriumDataResourceName = resourceNames.Single(str => str.EndsWith("PraetoriumData.csv"));
         }
 
         public void LoadRunData()
         {
-            PraetoriumCutscenes = ConstructCutscenes(PraetoriumDataPath);
+            //RunData[Constants.CastrumKey] = ConstructRunData(CastrumDataResourceName);
+            RunData[Constants.PraetoriumKey] = ConstructRunData(PraetoriumDataResourceName);
         }
 
-        private IEnumerable<CutsceneInfo> ConstructCutscenes(string runDataPath)
+        private RunData ConstructRunData(string resourceName)
         {
-            var runCheckpoints = _engine.ReadFile(runDataPath);
-            Log.Debug($"{runDataPath} loaded? {runCheckpoints != null}");
-
-            List<CutsceneInfo> cutscenes = new List<CutsceneInfo>();
-
-            CutsceneInfo cutscene = null;
-            RunCheckpoint lastCheckpoint = null;
-            foreach(var checkpoint in runCheckpoints)
+            using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceName))
+            using (StreamReader reader = new StreamReader(stream))
             {
-                if (cutscene == null)
+                var runCheckpoints = _engine.ReadStream(reader);
+                Log.Debug($"{resourceName} loaded? {runCheckpoints != null}");
+
+                List<CutsceneInfo> cutscenes = new List<CutsceneInfo>();
+
+                CutsceneInfo cutscene = null;
+                RunCheckpoint lastCheckpoint = null;
+                foreach (var checkpoint in runCheckpoints)
                 {
-                    cutscene = new CutsceneInfo
+                    if (cutscene == null)
                     {
-                        Label = checkpoint.Label,
-                    };
-                    lastCheckpoint = checkpoint;
+                        cutscene = new CutsceneInfo
+                        {
+                            Label = checkpoint.Label,
+                            StartTriggerRegex = checkpoint.TriggerMessageRegex,
+                            IsEnding = false,
+                        };
+                        lastCheckpoint = checkpoint;
+                    }
+                    else
+                    {
+                        cutscene.EndTriggerRegex = checkpoint.TriggerMessageRegex;
+                        cutscene.Duration = checkpoint.Timestamp - lastCheckpoint.Timestamp;
+                        cutscenes.Add(cutscene);
+                        cutscene = null;
+                    }
                 }
-                else
+                // assume last checkpoint doesn't have an accompanying end checkpoint, because it's the end of the run
+                cutscene.IsEnding = true;
+                cutscenes.Add(cutscene);
+                return new RunData
                 {
-                    cutscene.Duration = checkpoint.Timestamp - lastCheckpoint.Timestamp;
-                    cutscenes.Add(cutscene);
-                    cutscene = null;
-                }
+                    Cutscenes = cutscenes,
+                };
             }
-            return cutscenes;
         }
 
         private readonly Logger Log = Logger.GetLogger();

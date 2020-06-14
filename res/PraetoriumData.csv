@@ -1,0 +1,25 @@
+praetorium_start,21:25:51.633,01:Changed Zone to The Praetorium\.
+,21:27:22.000,00:0839:The Praetorium has begun\.
+cid_and_gaius,21:29:42.459,"03:[0-9A-F]{8}:Added new combatant Mark II Magitek Colossus\.  Job: N/A Level: 50 Max HP: 69450 Max MP: 10000 Pos: \(192\.0348,\-0\.07635498,75\.97461\) \(21340000001972\)\."
+,21:32:31.026,01:Changed Zone to The Praetorium\.
+defeat_colossus,21:33:06.496,"03:[0-9A-F]{8}:Added new combatant Magitek Death Claw\.  Job: N/A Level: 50 Max HP: 8611 Max MP: 10000 Pos: \(148\.0382,\-52\.72123,46\) \(21210000002253\)\."
+,21:34:01.833,01:Changed Zone to The Praetorium\.
+ride_mech,21:35:49.368,"03:FF000002:Added new combatant \.  Job: .+ Level: 0 Max HP: 0 Max MP: 10000 Pos: \(170\.4803,\-66\.41447,102\)\."
+,21:36:53.616,01:Changed Zone to The Praetorium\.
+blast_door,21:39:14.754,"04:[0-9A-F]{8}:Removing combatant Proto Ultima Arm Unit\.  Max HP: 206627\. Pos: \(\-36\.08182,\-1\.023186,\-103\.4\)\."
+,21:40:46.789,01:Changed Zone to The Praetorium\.
+nero_talk,21:41:01.670,"03:[0-9A-F]{8}:Added new combatant Nero Tol Scaeva\.  Job: Gla Level: 50 Max HP: 125010 Max MP: 10000 Pos: \(\-168\.6275,\-0\.1983643,\-104.3996\) \(21350000001437\)\."
+,21:44:57.937,01:Changed Zone to The Praetorium\.
+nero_defeat,21:45:54.756,"04:[0-9A-F]{8}:Removing combatant Nero Tol Scaeva\.  Max HP: 1200144\. Pos: \(\-195\.8801,\-1\.999023,\-104\.1169\)\."
+,21:47:35.014,01:Changed Zone to The Praetorium\.
+gaius_super_saiyan,21:47:50.553,"03:FF000008:Added new combatant \.  Job: N/A Level: 0 Max HP: 0 Max MP: 10000 Pos: \(\-271\.4176,\-21\.73532,\-104\)\."
+,21:52:30.075,01:Changed Zone to The Praetorium\.
+gaius_leave,21:53:09.972,"04:[0-9A-F]{8}:Removing combatant Gaius Van Baelsar\.  Max HP: 10104\. Pos: \(\-?[0-9]+\.?[0-9]*,\-?[0-9]+\.?[0-9]*,\-?[0-9]+\.?[0-9]*\)\."
+,21:54:04.835,01:Changed Zone to The Praetorium\.
+gaius_in_ultima,21:54:19.877,"03:FF000005:Added new combatant \.  Job: N/A Level: 0 Max HP: 0 Max MP: 10000 Pos: \(\-763\.7344,1\.245557,\-343.9974\)\."
+,21:56:17.292,01:Changed Zone to The Praetorium\.
+cast_ultima,21:58:34.240,"03:FF000013:Added new combatant \.  Job: N/A Level: 0 Max HP: 0 Max MP: 10000 Pos: \(\-883\.0101,\-302\.2302,\-399\.9309\)\."
+,22:03:32.147,01:Changed Zone to The Praetorium\.
+gaius_die,22:05:04.001,"03:[0-9A-F]{8}:Added new combatant Lahabrea\.  Job: N/A Level: 50 Max HP: 2778 Max MP: 10000 Pos: \(\-718\.2363,479\.2623,\-185\.7316\) \(21430000000434\)\."
+,22:08:59.147,01:Changed Zone to The Praetorium\.
+praetorium_finish,,00:0839:The Porta Decumana is no longer sealed!

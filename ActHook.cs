@@ -7,6 +7,8 @@ namespace Ricimon.FFXIV_PraeCastrum_Timer
 {
     public class ActHook : IActPluginV1
     {
+        public TabPage PluginScreenSpace { get; private set; }
+
         public Label PluginStatusText { get; private set; }
 
         private RunManager _runManager;
@@ -15,9 +17,8 @@ namespace Ricimon.FFXIV_PraeCastrum_Timer
         {
             try
             {
+                PluginScreenSpace = pluginScreenSpace;
                 PluginStatusText = pluginStatusText;
-
-                pluginScreenSpace.Controls.Add(new PluginWindow());
 
                 _runManager = new RunManager(this);
 

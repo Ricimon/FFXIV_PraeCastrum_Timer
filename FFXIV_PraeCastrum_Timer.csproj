@@ -52,9 +52,17 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
     <Compile Include="Models\CutsceneInfo.cs" />
     <Compile Include="Models\RunCheckpoint.cs" />
+    <Compile Include="Models\RunData.cs" />
+    <Compile Include="Models\RunResult.cs" />
     <Compile Include="Models\RunState.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="RunDataLoader.cs" />
     <Compile Include="RunManager.cs" />
     <Compile Include="Util\CSVImporter.cs" />
@@ -72,10 +80,15 @@
     <EmbeddedResource Include="PluginWindow.resx">
       <DependentUpon>PluginWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <EmbeddedResource Include="res\PraetoriumData.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

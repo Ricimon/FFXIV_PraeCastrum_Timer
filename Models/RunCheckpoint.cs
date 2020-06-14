@@ -17,6 +17,6 @@ namespace Ricimon.FFXIV_PraeCastrum_Timer.Models
         public DateTime Timestamp { get; set; }
 
         [FieldQuoted('"', QuoteMode.OptionalForBoth)]
-        public string TriggerMessage { get; set; }
+        public string TriggerMessageRegex { get; set; }
     }
 }
