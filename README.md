@@ -19,3 +19,7 @@ In ACT, navigate to the **Plugins** tab and click on the **FFXIV_PraeCastrum_Tim
 
 - *Play a sound when a cutscene is almost over*
 - *In-game timer overlay*
+
+## License
+
+MIT License. See [License](LICENSE) for details.
