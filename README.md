@@ -5,6 +5,8 @@ An Advanced Combat Tracker (ACT) Plugin to show how much time is left in FFXIV C
 
 Since Castrum and Praetorium are full of long, unskippable cutscenes, I'll often tab out to do other things when they start playing. However, to make sure I catch when the cutscene ends, I'll often tab back in to check the cutscene progress. I found this really annoying, so this plugin aims to remove the need for that. It parses ACT messages to detect when a cutscene begins, and shows a timer counting down to when the cutscene ends.
 
+![example](images/example.png?raw=true)
+
 ## Installation
 
 See the [releases page](https://github.com/Ricimon/FFXIV_PraeCastrum_Timer/releases) for download archives.
