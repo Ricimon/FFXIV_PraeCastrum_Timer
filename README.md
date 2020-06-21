@@ -17,7 +17,7 @@ installation instructions *coming soon*
 
 ## Usage
 
-In ACT, navigate to the **Plugins** tab and click on the **FFXIV_PraeCastrum_Timer** tab. Timers will appear here when the plugin detects a run has been started.
+In ACT, navigate to the **Plugins** tab and click on the **FFXIV PraeCastrum Timer** tab. Timers will appear here when the plugin detects a run has been started.
 
 ## Coming Soon
 

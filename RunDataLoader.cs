@@ -21,13 +21,13 @@ namespace Ricimon.FFXIV_PraeCastrum_Timer
         {
             // https://stackoverflow.com/a/3314213
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
-            //CastrumDataResourceName = resourceNames.Single(str => str.EndsWith("CastrumData.csv"));
+            CastrumDataResourceName = resourceNames.Single(str => str.EndsWith("CastrumData.csv"));
             PraetoriumDataResourceName = resourceNames.Single(str => str.EndsWith("PraetoriumData.csv"));
         }
 
         public void LoadRunData()
         {
-            //RunData[Constants.CastrumKey] = ConstructRunData(CastrumDataResourceName);
+            RunData[Constants.CastrumKey] = ConstructRunData(CastrumDataResourceName);
             RunData[Constants.PraetoriumKey] = ConstructRunData(PraetoriumDataResourceName);
         }
 

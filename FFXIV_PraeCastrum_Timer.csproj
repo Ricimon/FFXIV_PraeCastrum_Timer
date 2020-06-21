@@ -89,6 +89,7 @@
     <None Include="app.config" />
     <None Include="packages.config" />
     <EmbeddedResource Include="res\PraetoriumData.csv" />
+    <EmbeddedResource Include="res\CastrumData.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

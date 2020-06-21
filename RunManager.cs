@@ -26,6 +26,7 @@ namespace Ricimon.FFXIV_PraeCastrum_Timer
             _runDataLoader.LoadRunData();
 
             actHook.PluginScreenSpace.Controls.Add(new PluginWindow(this));
+            actHook.PluginScreenSpace.Text = "FFXIV PraeCastrum Timer";
 
             ActGlobals.oFormActMain.BeforeLogLineRead += OnBeforeLogLineRead;
         }
@@ -146,8 +147,9 @@ namespace Ricimon.FFXIV_PraeCastrum_Timer
             try
             {
                 if (isImport) { return; }
-
+#if DEBUG
                 Log.Trace(logInfo.logLine);
+#endif
 
                 var logLine = logInfo.logLine;
                 if (RunState == null)
