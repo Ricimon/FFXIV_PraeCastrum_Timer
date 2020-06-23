@@ -19,10 +19,11 @@ installation instructions *coming soon*
 
 In ACT, navigate to the **Plugins** tab and click on the **FFXIV PraeCastrum Timer** tab. Timers will appear here when the plugin detects a run has been started.
 
-## Coming Soon
+## Coming Soon™
 
 - *Play a sound when a cutscene is almost over*
 - *In-game timer overlay*
+- *Non-English support*
 
 ## License
 
