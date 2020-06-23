@@ -2,15 +2,15 @@ castrum_start,23:01:36.740,01:Changed Zone to Castrum Meridianum\.
 ,23:02:08.000,00:0839:Castrum Meridianum has begun\.
 searchlight_darken,20:28:38.000,00:0839:This area is no longer under alert\. Patrol units returning to stations\.
 ,20:29:02.939,01:Changed Zone to Castrum Meridianum\.
-magitek_enter,20:29:24.430,"03:[0-9A-F]{8}:Added new combatant Magitek Colossus\.  Job: N/A Level: 50 Max HP: 25835 Max MP: 10000 Pos: \(65\.20621,\-163\.3789,77.95817\) \(29700000002249\)\."
+magitek_enter,20:29:24.430,"03:[0-9A-F]{8}:Added new combatant The Black Eft\.  Job: N/A Level: 50 Max HP: 65699 Max MP: 10000 Pos: \(11\.78179,\-38\.63745,70\.17245\) \(55700000001882\)\."
 ,20:29:47.102,01:Changed Zone to Castrum Meridianum\.
 magitek_defeat,20:30:41.182,"03:[0-9A-F]{8}:Added new combatant Magitek Vanguard\.  Job: N/A Level: 50 Max HP: 12917 Max MP: 10000 Pos: \(46\.58582,85\.31323,66\.6859\) \(26900000001879\)\."
 ,20:32:37.624,01:Changed Zone to Castrum Meridianum\.
-see_vents,23:06:31.112,"04:[0-9A-F]{8}:Removing combatant \.  Max HP: 10104. Pos: (\-?[0-9]+\.?[0-9]*,\-?[0-9]+\.?[0-9]*,\-?[0-9]+\.?[0-9]*\)\."
+see_vents,23:06:31.112,"04:[0-9A-F]{8}:Removing combatant \.  Max HP: 10104. Pos: \(\-?[0-9]+\.?[0-9]*,\-?[0-9]+\.?[0-9]*,\-?[0-9]+\.?[0-9]*\)\."
 ,23:06:45.531,01:Changed Zone to Castrum Meridianum\.
 vanguard_drop,23:08:42.508,"03:FF000003:Added new combatant \.  Job: .+ Level: 0 Max HP: 0 Max MP: 10000 Pos: \(\-13\.66036,33\.98968,69\.94218\)\."
 ,23:09:06.812,01:Changed Zone to Castrum Meridianum\.
-vanguard_defeat,23:10:01.396,"04:[0-9A-F]{8}:Removing combatant Magitek Reaper\.  Max HP: 153972. Pos: (\-?[0-9]+\.?[0-9]*,\-?[0-9]+\.?[0-9]*,\-?[0-9]+\.?[0-9]*\)\."
+vanguard_defeat,23:10:01.396,"04:[0-9A-F]{8}:Removing combatant Magitek Reaper\.  Max HP: 153972. Pos: \(\-?[0-9]+\.?[0-9]*,\-?[0-9]+\.?[0-9]*,\-?[0-9]+\.?[0-9]*\)\."
 ,23:11:08.034,01:Changed Zone to Castrum Meridianum\.
 colossus_defeat,23:15:34.000,00:[0-9a-fA-F]{4}:.+ defeats? the magitek colossus rubricatus\.
 ,23:17:07.092,01:Changed Zone to Castrum Meridianum\.
