@@ -22,8 +22,10 @@ namespace Ricimon.FFXIV_PraeCastrum_Timer
             _runManager.RunStateChanged += UpdateRunStateLabels;
             _runManager.OnRunEnded += UpdateRunResultLabels;
 
-            var timer = new Timer();
-            timer.Interval = 250;
+            var timer = new Timer
+            {
+                Interval = 250
+            };
             timer.Start();
             timer.Tick += UpdateTimers;
         }
@@ -58,6 +60,10 @@ namespace Ricimon.FFXIV_PraeCastrum_Timer
         private string ConvertToDurationOutput(TimeSpan duration, bool showMilliseconds)
         {
             var s = duration.ToString(showMilliseconds ? @"mm\:ss\.fff" : @"mm\:ss");
+            if (duration < TimeSpan.Zero)
+            {
+                s = "-" + s;
+            }
             var hours = Math.Floor(duration.TotalHours);
             if (hours > 0)
             {
