@@ -16,7 +16,7 @@ namespace Ricimon.FFXIV_PraeCastrum_Timer
 
         private void PluginWindow_Load(object sender, EventArgs e)
         {
-            UpdateRunStateLabels(null);
+            UpdateRunStateLabels(_runManager.RunState);
             UpdateRunResultLabels(null);
 
             _runManager.RunStateChanged += UpdateRunStateLabels;
