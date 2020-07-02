@@ -9,6 +9,8 @@ Since Castrum and Praetorium are full of long, unskippable cutscenes, I'll often
     <img src="images/example.png" width="600"/>
 </p>
 
+Only english game clients are supported at this time.
+
 ## Installation
 
 See the [releases page](https://github.com/Ricimon/FFXIV_PraeCastrum_Timer/releases) for download archives.
@@ -23,7 +25,7 @@ In ACT, navigate to the **Plugins** tab and click on the **FFXIV PraeCastrum Tim
 
 - *Play a sound when a cutscene is almost over*
 - *In-game timer overlay*
-- *Non-English support*
+- *Accurate timers for non-english VO*
 
 ## License
 
