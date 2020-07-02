@@ -13,23 +13,23 @@ Since Castrum and Praetorium are full of long, unskippable cutscenes, I'll often
 
 See the [releases page](https://github.com/Ricimon/FFXIV_PraeCastrum_Timer/releases) for download archives.
 
-_Only english game clients are supported at this time._
+*Only english game clients are supported at this time.*
 
 - Place the downloaded dll file into ACT plugins folder by opening Windows Explorer to `%APPDATA%/Advanced Combat Tracker/Plugins` and moving the dll into there.
 
-- In ACT, click on _Browse_ and open the dll file in the Plugins folder.
+- In ACT, click on **Browse** and open the dll file in the Plugins folder.
 
-- Click on _Add/Enable Plugin_ and make sure the _Enabled_ checkbox for the plugin is checked.
+- Click on **Add/Enable Plugin** and make sure the **Enabled** checkbox for the plugin is checked.
 
 ## Usage
 
 In ACT, navigate to the **Plugins** tab and click on the **FFXIV PraeCastrum Timer** tab. Timers will appear here when the plugin detects a run has been started.
 
-If an incorrect run was detected, click on _Abort Run_.
+If an incorrect run was detected, click on **Abort Run**.
 
 To force start a specific run, in case the start trigger wasn't detected, click on the corresponding button.
 
-If a checkpoint was missed for some reason, click on _Skip Checkpoint_ to advance the run state.
+If a checkpoint was missed for some reason, click on **Skip Checkpoint** to advance the run state.
 
 ## Coming Soon™
 
