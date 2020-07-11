@@ -8,7 +8,7 @@ magitek_defeat,20:30:41.182,"03:[0-9A-F]{8}:Added new combatant Magitek Vanguard
 ,20:32:37.624,01:Changed Zone to Castrum Meridianum\.
 vanguard_drop,21:05:16.802,"03:[0-9A-F]{8}:Added new combatant \.  Job: .+ Level: 0 Max HP: 0 Max MP: 10000 Pos: \(\-13\.66036,33\.98968,69\.94218\)\."
 ,21:05:41.408,01:Changed Zone to Castrum Meridianum\.
-vanguard_defeat,21:14:42.419,"04:[0-9A-F]{8}:Removing combatant Magitek Vanguard F\-1\.  Max HP: 554384. Pos:  \(\-?[0-9]+\.?[0-9]*,\-?[0-9]+\.?[0-9]*,\-?[0-9]+\.?[0-9]*\)\."
+vanguard_defeat,21:14:42.419,"04:[0-9A-F]{8}:Removing combatant Magitek Vanguard F\-1\.  Max HP: 554384\. Pos:  \(\-?[0-9]+\.?[0-9]*,\-?[0-9]+\.?[0-9]*,\-?[0-9]+\.?[0-9]*\)\."
 ,21:15:39.525,01:Changed Zone to Castrum Meridianum\.
 colossus_defeat,21:19:59.000,00:0839:The Armamentarium is no longer sealed!
 ,21:21:33.455,01:Changed Zone to Castrum Meridianum\.
