@@ -1,3 +1,5 @@
+**Castrum Meridianum and The Praetorium have been reworked since patch 6.1, making this plugin obsolete.**
+
 # FFXIV PraeCastrum Timer
 An Advanced Combat Tracker (ACT) Plugin to show how much time is left in FFXIV Castrum/Praetorium cutscenes.
 
